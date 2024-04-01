@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/InterRegular.eot");
+  src: url("../fonts/InterRegular.eot") format('embedded-opentype'), url("../fonts/InterRegular.woff2") format('woff2'), url("../fonts/InterRegular.woff") format('woff'), url("../fonts/InterRegular.ttf") format('truetype'), url("../fonts/InterRegular.svg#InterRegular") format('svg');
+}
+@font-face {
+  font-family: 'Inter';
+  font-display: fallback;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/InterBold.eot");
+  src: url("../fonts/InterBold.eot") format('embedded-opentype'), url("../fonts/InterBold.woff2") format('woff2'), url("../fonts/InterBold.woff") format('woff'), url("../fonts/InterBold.ttf") format('truetype'), url("../fonts/InterBold.svg#InterBold") format('svg');
+}
+@font-face {
+  font-family: 'RGStandardBold';
+  font-display: fallback;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RGStandardBold.eot");
+  src: url("../fonts/RGStandardBold.eot") format('embedded-opentype'), url("../fonts/RGStandardBold.woff2") format('woff2'), url("../fonts/RGStandardBold.woff") format('woff'), url("../fonts/RGStandardBold.ttf") format('truetype'), url("../fonts/RGStandardBold.svg#RGStandardBold") format('svg');
+}
 /*!
  * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
  *//*!
@@ -9,6 +33,20 @@
   margin: 0;
   padding: 0;
   outline: none;
+}
+body {
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.1;
+}
+.wrapper {
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  z-index: 60;
 }
 a {
   color: #000;
@@ -77,21 +115,45 @@ footer {
   margin: 0 auto;
 }
 .button {
-  display: block;
-  text-align: center;
+  display: inline-block;
   margin: 0 auto;
   text-decoration: none;
   color: #fff;
-  width: 100%;
+  width: auto;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 17px 48px;
+  border-radius: 24px;
+  background-color: #247974;
+}
+.button-wrapper {
+  text-align: center;
+}
+.button-wrapper-left {
+  text-align: left;
 }
 .button:focus {
   text-decoration: none;
+  color: inherit;
 }
 .button:hover {
   text-decoration: none;
+  color: inherit;
+}
+.button-main {
+  background-color: transparent;
+  border: 2px dotted #000;
+  color: #000;
 }
 .general-title {
-  text-align: center;
+  text-transform: uppercase;
+  color: #247974;
+  font-family: 'RGStandardBold', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.general-img {
+  position: absolute;
 }
 header {
   overflow: hidden;
@@ -101,22 +163,66 @@ header {
 .header-logo {
   float: left;
 }
-.contacts {
+@media screen and (max-width: 991px) {
+  .header-logo {
+    margin-top: 37px;
+    float: none;
+  }
+}
+.header-menu {
   float: right;
-  text-align: right;
+  text-align: center;
+  margin-top: 18px;
 }
-.contact {
-  line-height: 42px;
-  font-size: 16px;
+.header-menu li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 30px;
 }
-.contact-skype {
-  margin: 0 20px;
+@media screen and (max-width: 1199px) {
+  .header-menu li {
+    margin-left: 10px;
+  }
 }
-.contact:focus {
-  text-decoration: none;
+@media screen and (max-width: 991px) {
+  .header-menu li {
+    text-align: left;
+    display: block;
+  }
 }
-.contact:hover {
-  text-decoration: underline;
+.header-menu li:first-child {
+  margin-left: 0;
+}
+.header-menu li a {
+  font-size: 12px;
+  padding: 7px 46px;
+  border-radius: 24px;
+  border: 1px solid #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+@media screen and (max-width: 1199px) {
+  .header-menu li a {
+    padding: 7px 26px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-menu li a {
+    font-size: 15px;
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+    width: auto;
+  }
+}
+.header-menu li a:focus,
+.header-menu li a:hover {
+  color: #000;
+}
+.fixed {
+  position: fixed;
 }
 footer {
   padding: 20px 0;
@@ -180,4 +286,75 @@ footer p {
 }
 .soc-buttons a:nth-of-type(6) {
   background-position: -145px 0;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  width: 56px;
+  height: 40px;
+  padding: 0;
+  top: 70px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 200;
+}
+.mobile-menu-line {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.mobile-menu-line-1 {
+  top: 0;
+}
+.mobile-menu-line-1.switched {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+  right: 0;
+  left: 0;
+  width: 42px;
+}
+.mobile-menu-line-2 {
+  top: calc(50% - 2.5px);
+}
+.mobile-menu-line-2.switched {
+  opacity: 0;
+}
+.mobile-menu-line-3 {
+  bottom: 0;
+}
+.mobile-menu-line-3.switched {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+  left: 0;
+  right: 0;
+  width: 42px;
+}
+.nav-active {
+  left: 0 !important;
+}
+@media screen and (max-width: 991px) {
+  .header-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 60px 20px 20px;
+    z-index: 190;
+    top: -20px;
+    left: -100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header-menu li {
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
 }
