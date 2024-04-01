@@ -225,67 +225,57 @@ header {
   position: fixed;
 }
 footer {
-  padding: 20px 0;
-  text-align: center;
-  background-color: rgba(238,238,238,0.7);
-  font-size: 14px;
+  background-color: #c4e8e5;
+  padding: 20px 0 15px;
+  font-size: 13px;
 }
-footer h5 {
-  font-size: 20px;
-  margin: 0;
-  font-weight: bold;
+@media screen and (max-width: 991px) {
+  footer {
+    padding: 40px 0 35px;
+  }
 }
-footer p {
-  line-height: 1.3;
-}
-.conditions {
+footer a:focus,
+footer a:hover {
   color: #000;
-  text-decoration: underline;
 }
-.conditions:focus {
-  color: #000;
-  text-decoration: underline;
+.footer-main {
+  padding: 23px 0 32px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
-.conditions:hover {
-  color: #000;
-  text-decoration: none;
+.footer-info {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.soc-buttons {
-  width: 100%;
-  margin: 0 auto;
+.footer-info p {
+  margin-bottom: 5px;
 }
-.soc-buttons a {
+@media screen and (max-width: 991px) {
+  .footer-info {
+    display: block;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-info-item {
+    margin-top: 40px;
+  }
+}
+.footer-links {
+  margin-top: 15px;
+}
+.footer-links a {
+  margin-right: 5px;
   display: inline-block;
-  margin: 15px 7px 10px;
-  width: 29px;
-  height: 29px;
-  background-image: url("../img/icons/soc-buttons.png");
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.soc-buttons a:hover {
-  opacity: 0.9;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-}
-.soc-buttons a:nth-of-type(1) {
-  background-position: 0 0;
-}
-.soc-buttons a:nth-of-type(2) {
-  background-position: -29px 0;
-}
-.soc-buttons a:nth-of-type(3) {
-  background-position: -58px 0;
-}
-.soc-buttons a:nth-of-type(4) {
-  background-position: -87px 0;
-}
-.soc-buttons a:nth-of-type(5) {
-  background-position: -116px 0;
-}
-.soc-buttons a:nth-of-type(6) {
-  background-position: -145px 0;
+  margin-bottom: 5px;
 }
 .mobile-menu {
   display: none;
