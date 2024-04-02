@@ -264,6 +264,19 @@ header {
   padding: 20px 0 115px;
   background-color: #c4e8e5;
 }
+.main-title {
+  font-family: 'RGStandardBold', sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin: 180px 0 20px;
+}
+.main-subtitle {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 590px;
+}
 #about {
   padding: 90px 0 270px;
 }
@@ -675,7 +688,12 @@ header {
   margin-top: 60px;
   padding-left: 30px;
   position: relative;
-  z-index: 70;
+  z-index: 10;
+}
+@media screen and (max-width: 991px) {
+  .author-info {
+    z-index: 70;
+  }
 }
 @media screen and (max-width: 386px) {
   .author-info {
@@ -820,7 +838,7 @@ header {
   }
 }
 .general-img-author-1 {
-  left: -50%;
+  left: -49%;
   right: -50%;
   bottom: -270px;
   z-index: 30;
