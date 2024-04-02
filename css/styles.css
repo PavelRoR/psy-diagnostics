@@ -157,9 +157,39 @@ footer {
   font-family: 'RGStandardBold', sans-serif;
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 .general-img {
   position: absolute;
+}
+@media screen and (max-width: 991px) {
+  .mob-none {
+    display: none;
+  }
+}
+.general-text {
+  margin-bottom: 10px;
+}
+.general-text span {
+  font-weight: bold;
+}
+.general-text-right {
+  text-align: right;
+}
+.general-list {
+  margin-left: 30px;
+}
+@media screen and (max-width: 386px) {
+  .general-list {
+    margin-left: 15px;
+  }
+}
+.general-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.general-list li:last-child {
+  margin-bottom: 0;
 }
 header {
   overflow: hidden;
@@ -230,6 +260,242 @@ header {
 .fixed {
   position: fixed;
 }
+#main {
+  padding: 20px 0 115px;
+  background-color: #c4e8e5;
+}
+#about {
+  padding: 90px 0 270px;
+}
+.about-item {
+  border-radius: 54px;
+  padding: 26px 30px;
+  margin-bottom: 40px;
+  min-height: 355px;
+}
+.about-items {
+  position: relative;
+  margin: 30px auto 110px;
+}
+@media screen and (max-width: 650px) {
+  .about-items {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about-item {
+    margin-bottom: 15px;
+  }
+}
+.about-item-pink {
+  background-color: #f2f0f0;
+}
+.about-item-lightblue {
+  background-color: #f1f8ff;
+}
+.about-item-blue {
+  background-color: #ddebfa;
+}
+.about-item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 23px;
+}
+@media screen and (max-width: 386px) {
+  .about-item-head {
+    display: block;
+  }
+}
+.about-item-head-title {
+  font-family: 'RGStandardBold', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 22px;
+  color: #247974;
+}
+@media screen and (max-width: 386px) {
+  .about-item-head-title {
+    margin: 15px 0;
+  }
+}
+.about-item-single {
+  padding: 70px;
+  border-radius: 46px;
+  background-color: #ddfaf9;
+  min-height: 1px;
+}
+@media screen and (max-width: 650px) {
+  .about-item-single {
+    padding: 60px 50px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .about-item-single {
+    padding: 40px 30px;
+  }
+}
+.about-item-single-1 {
+  margin-top: 70px;
+}
+@media screen and (max-width: 650px) {
+  .about-item-single-1 {
+    margin: 60px 0 150px;
+  }
+}
+.about-item-single-2 {
+  padding: 70px 120px;
+}
+@media screen and (max-width: 650px) {
+  .about-item-single-2 {
+    padding: 60px 50px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .about-item-single-2 {
+    padding: 40px 30px;
+  }
+}
+.about-item-single-title {
+  font-family: 'RGStandardBold', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+@media screen and (max-width: 386px) {
+  .about-item-single-title {
+    font-size: 24px;
+  }
+}
+.general-img-about-arrow-1 {
+  top: 118px;
+  right: -10px;
+}
+@media screen and (max-width: 650px) {
+  .general-img-about-arrow-1 {
+    display: none;
+  }
+}
+.general-img-about-arrow-2 {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .general-img-about-arrow-2 {
+    display: block;
+    right: 25px;
+    top: 170px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .general-img-about-arrow-2 {
+    top: 200px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .general-img-about-arrow-2 {
+    right: -25px;
+  }
+}
+.general-img-about-1 {
+  margin: 0 auto;
+  left: -50%;
+  right: -50%;
+  top: 230px;
+}
+@media screen and (max-width: 650px) {
+  .general-img-about-1 {
+    display: none;
+  }
+}
+.general-img-about-1-mob {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .general-img-about-1-mob {
+    display: block;
+    left: -150px;
+    top: -165px;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 386px) {
+  .general-img-about-1-mob {
+    left: -220px;
+  }
+}
+.general-img-about-2-mob {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .general-img-about-2-mob {
+    display: block;
+    left: -100px;
+    bottom: -260px;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 386px) {
+  .general-img-about-2-mob {
+    left: -130px;
+  }
+}
+.about-time {
+  margin-top: 150px;
+}
+@media screen and (max-width: 650px) {
+  .about-time {
+    text-align: center;
+    margin-top: 75px;
+  }
+}
+.about-time-img {
+  display: block;
+  margin: 20px auto 45px;
+}
+.about-time-5 {
+  background-color: #f2f0f0;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  padding: 10px 35px;
+  width: 100%;
+  max-width: 400px;
+}
+@media screen and (max-width: 650px) {
+  .about-time-5 {
+    max-width: 225px;
+    border-radius: 30px;
+    display: inline-block;
+  }
+}
+.about-time-5-text {
+  font-size: 50px;
+}
+.about-time .general-text {
+  margin-top: 7px;
+}
+@media screen and (max-width: 650px) {
+  .about-time .general-text {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+.general-img-about-2 {
+  bottom: -250px;
+  right: -20%;
+}
+@media screen and (max-width: 650px) {
+  .general-img-about-2 {
+    width: 365px;
+    z-index: -1;
+    right: -270px;
+    bottom: -200px;
+  }
+}
 #plan {
   padding: 60px 0;
   background-color: #c4e8e5;
@@ -252,10 +518,18 @@ header {
   border-bottom-right-radius: 39px;
   z-index: 0;
 }
+.gt-wrapper .general-title {
+  margin-bottom: 0;
+}
 .step {
   position: relative;
   padding: 8px 0 13px 30px;
   margin-bottom: 18px;
+}
+@media screen and (max-width: 386px) {
+  .step {
+    padding: 8px 0 13px 15px;
+  }
 }
 .step .content {
   display: -webkit-box;
@@ -287,14 +561,30 @@ header {
   width: 61px;
   text-align: center;
 }
+@media screen and (max-width: 386px) {
+  .step-num {
+    width: 40px;
+  }
+}
 .step-num h4 {
   font-size: 48px;
   color: #247974;
+}
+@media screen and (max-width: 386px) {
+  .step-num h4 {
+    font-size: 32px;
+  }
 }
 .step-info {
   position: relative;
   padding: 35px 0 35px 20px;
   margin-left: 22px;
+}
+@media screen and (max-width: 386px) {
+  .step-info {
+    padding: 20px 0 20px 15px;
+    margin-left: 14px;
+  }
 }
 .step-info:before {
   content: '';
@@ -311,6 +601,11 @@ header {
   font-family: 'RGStandardBold', sans-serif;
   font-size: 24px;
   font-weight: bold;
+}
+@media screen and (max-width: 386px) {
+  .step-info-title {
+    font-size: 22px;
+  }
 }
 .step-info-text {
   margin: 10px 0 15px;

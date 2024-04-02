@@ -100,7 +100,26 @@ footer
 	font-family: RG
 	font-size: 24px
 	font-weight: bold
+	margin-bottom: 15px
 	// @media screen and (max-width 650px)
 	// 	font-size: 28px
 .general-img
 	position absolute
+.mob-none
+	@media screen and (max-width 991px)
+		display none
+.general-text
+	margin-bottom: 10px
+	span
+		font-weight: bold
+	&-right
+		text-align right
+.general-list
+	margin-left: 30px
+	@media screen and (max-width 386px)
+		margin-left: 15px
+	li
+		position relative
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0

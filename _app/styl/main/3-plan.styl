@@ -17,10 +17,14 @@
 		border-top-right-radius: 39px
 		border-bottom-right-radius: 39px
 		z-index 0
+	.general-title
+		margin-bottom: 0
 .step
 	position relative
 	padding 8px 0 13px 30px
 	margin-bottom: 18px
+	@media screen and (max-width 386px)
+		padding 8px 0 13px 15px
 	.content
 		display flex
 		align-items: center
@@ -41,13 +45,20 @@
 	&-num
 		width 61px
 		text-align center
+		@media screen and (max-width 386px)
+			width 40px
 		h4
 			font-size: 48px
 			color #247974
+			@media screen and (max-width 386px)
+				font-size: 32px
 .step-info
 	position relative
 	padding 35px 0 35px 20px
 	margin-left: 22px
+	@media screen and (max-width 386px)
+		padding 20px 0 20px 15px
+		margin-left: 14px
 	&:before
 		content: ''
 		display block
@@ -62,6 +73,8 @@
 		font-family: RG
 		font-size: 24px
 		font-weight: bold
+		@media screen and (max-width 386px)
+			font-size: 22px
 	&-text
 		margin 10px 0 15px
 		span
