@@ -39,40 +39,40 @@ mobMenu.on('click', function () {
 });
 
     // слайдер с текстовыми отзывами
-    $('.revs-slider-text').slick({
-        autoplay: false,
-        autoplaySpeed: 3000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: 0,
-        loop: false,
-        dots: 0,
-        speed: 300,
-        arrows: true,
-        centerPadding: '30px',
-        adaptiveHeight: true,
-        centerMode: 0,
-        appendArrows: '.text-revs-arrows-2',
-        responsive: [
-            {
-                breakpoint: 1199,
-                settings: {
-                    slidesToShow: 3
-                }},
-            {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 2
-            }},
-            {
-            breakpoint: 650,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
+    // $('.revs-slider-text').slick({
+    //     autoplay: false,
+    //     autoplaySpeed: 3000,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     infinite: 0,
+    //     loop: false,
+    //     dots: 0,
+    //     speed: 300,
+    //     arrows: true,
+    //     centerPadding: '30px',
+    //     adaptiveHeight: true,
+    //     centerMode: 0,
+    //     appendArrows: '.text-revs-arrows-2',
+    //     responsive: [
+    //         {
+    //             breakpoint: 1200,
+    //             settings: {
+    //                 slidesToShow: 3
+    //             }},
+    //         {
+    //         breakpoint: 992,
+    //         settings: {
+    //             slidesToShow: 2
+    //         }},
+    //         {
+    //         breakpoint: 651,
+    //         settings: {
+    //             slidesToShow: 1
+    //         }
+    //     }]
+    // });
 
-    // модалка
-    $(['data-fancybox']).fancybox();
+    // // модалка
+    // $(['data-fancybox']).fancybox();
 /*Конец документа*/
 });
