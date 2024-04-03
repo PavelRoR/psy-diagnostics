@@ -2,8 +2,9 @@ section#revs
 	.container
 		.gt-pre Отзывы
 		+gt('general-title-revs', 'Для&nbsp;решения этих проблем мы сделали длительные программы и вот что о&nbsp;них говорят люди:')
+		.content
+			.text-revs-arrows-2
 		.revs-slider-text
 			each n in [1,2,3,4,5,6,7,8]
 				a.text-rev-link(href=path+"img/revs/text-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-"+n+".min.jpg", alt="Отзыв "+n).text-rev-img
-	.container
 		+b('', '', href, 'Пройти бесплатную диагностику')

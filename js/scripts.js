@@ -45,6 +45,7 @@ mobMenu.on('click', function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: 0,
+        loop: false,
         dots: 0,
         speed: 300,
         arrows: true,
@@ -52,8 +53,19 @@ mobMenu.on('click', function () {
         adaptiveHeight: true,
         centerMode: 0,
         appendArrows: '.text-revs-arrows-2',
-        responsive: [{
-            breakpoint: 768,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3
+                }},
+            {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2
+            }},
+            {
+            breakpoint: 650,
             settings: {
                 slidesToShow: 1
             }

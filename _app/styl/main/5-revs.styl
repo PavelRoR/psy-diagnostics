@@ -2,8 +2,14 @@
 	padding 60px 0
 .general-title-revs
 	width 60%
+	@media screen and (max-width 650px)
+		width 100%
 .revs-slider-text
 	margin 0 auto 80px
+	@media screen and (max-width 1199px)
+		padding-top: 55px
+	@media screen and (max-width 650px)
+		margin-bottom: 50px
 .text-rev-img
 	background-color: #F5F5F5
 	border-radius: 23px
@@ -12,3 +18,33 @@
 	margin 0 auto
 	width 266px
 	height: 461px
+.text-revs-arrows-2
+	position absolute
+	top -42px
+	right 0
+	@media screen and (max-width 1199px)
+		right 30px
+	@media screen and (max-width 1199px)
+		right auto
+		left 145px
+		top 20px
+.slick-next
+.slick-prev
+	width 52px
+	height: 52px
+	background-repeat: no-repeat
+	background-position: center
+	&:before
+		content: none
+.slick-prev
+	background-image: url(../img/images/prev.png)
+	left -140px
+	&:focus
+	&:hover
+		background-image: url(../img/images/prev.png)
+.slick-next
+	background-image: url(../img/images/next.png)
+	right 0
+	&:focus
+	&:hover
+		background-image: url(../img/images/next.png)
